@@ -1,11 +1,11 @@
 # tfcb_capstone
 Jodiene Johnson
-December 16, 2020
+
 
 ## Analysis of tumor grade, tumor size, and histologic type in ER positive and triple negative breast cancers
 
 ## Project organization
-This project uses data from the article cited below make comparisons and correlations between tumor grade, tumor size, and histologic type for ER positive
+This project uses data from the article cited below to make comparisons and correlations between tumor grade, tumor size, and histologic type for ER positive
 and triple negative tumor samples.
 
 
@@ -20,7 +20,7 @@ The link for the article can be found here: https://journals.plos.org/plosone/ar
 
 ## Data folder
 
-Contained in the data folder are the raw data named tumor location raw data_final, the tidy raw data file named Tidy data for raw file,
+Contained in the data folder are the raw data file named tumor location raw data_final, the tidy raw data file named Tidy data for raw file,
 the csv files for the tidy data for subtypes of each cancer. 
 
 ## About the analysis
