@@ -1,0 +1,45 @@
+---
+title: "Question 3"
+author: "Jodiene Johnson"
+date: "12/16/2020"
+output: html_document
+---
+
+```{r}
+Tumor<- read.csv("Tidy data for raw file.csv") #read file in as a tibble
+print(Tumor)
+```
+##Question 3 
+
+Is there a correlation between tumor grade and histologic type?
+
+```{r}
+library(tidyverse)  
+```
+```{r}
+mydata <- Tumor %>% 
+  select(Tumor.Grade,Histologic.Type) #select tumor grade and histologic type colums form tibble
+print(mydata)
+```
+```{r}
+install.packages("ggfortify")
+
+```
+```{r}
+data <- mydata [1:2]
+pca_res <- prcomp(mydata, scale. = TRUE) #perform PCA to see if there is any relationship between the 2 variables.
+print(pca_res)
+```
+
+
+```{r}
+library(ggfortify)
+df <- mydata[1:2]
+pca_res <- prcomp(df, scale. = TRUE) #plot data
+
+autoplot(pca_res)
+```
+##Intepretation for question 3
+
+Based on the PCA plot, there appears to be no correlation between tumor grade and histologic type. A statistical test such as a linear regression like the authors did may be a better method to answer this question. 
+
